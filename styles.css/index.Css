@@ -1,0 +1,95 @@
+/* Fondo con imagen */
+body {
+    background-image: url("../Image/fondologin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tarjeta de login: fondo oscuro translúcido + blur */
+.login-card {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 18px;
+    background: rgba(15, 23, 42, 0.75); /* azul oscuro translúcido */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    padding: 30px 25px;
+    color: #e0e7ff; /* texto claro */
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Título */
+.login-card h3 {
+    font-weight: 700;
+    color: #cbd5e1; /* azul muy claro */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Inputs */
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    color: #e0e7ff;
+    border-radius: 14px;
+    padding: 14px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: rgba(203, 213, 225, 0.7);
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #f97316; /* naranja del botón */
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.6);
+    color: #f0f9ff;
+    outline: none;
+}
+
+/* Botón anaranjado rojizo */
+.btn-primary {
+    margin-top: 15px;
+    border-radius: 14px;
+    padding: 14px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #f97316, #dc2626); /* naranja rojizo degradado */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #c2410c, #b91c1c);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.7);
+    transform: translateY(-2px);
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .login-card {
+        margin: 0 15px;
+        padding: 25px 20px;
+    }
+}
