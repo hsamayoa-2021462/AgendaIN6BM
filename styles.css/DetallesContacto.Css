@@ -1,0 +1,71 @@
+body {
+    background-image: url("../Image/fondologin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 30px;
+    color: #fff;
+}
+
+/* Título */
+h2 {
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+/* Card que contiene los detalles */
+.contact-details-card {
+    background: rgba(20, 30, 50, 0.75);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Lista de detalles */
+.list-group-item {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.list-group-item strong {
+    color: #f97316; /* mismo naranja de botones */
+}
+
+/* Botón volver */
+.btn-warning {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #f97316;
+    border: none;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e65c00;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    body {
+        padding: 20px;
+    }
+
+    .contact-details-card {
+        padding: 15px;
+    }
+
+    .btn-warning {
+        width: 100%;
+        text-align: center;
+    }
+}
