@@ -1,0 +1,90 @@
+body {
+    background-image: url("../Image/fondologin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 30px;
+    color: #fff;
+}
+
+
+h2 {
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+
+.contact-form-card {
+    background: rgba(20, 30, 50, 0.75);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+
+.form-label {
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+
+.form-control {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-control::placeholder {
+    color: #d1d5db;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+}
+
+
+.btn-warning {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #f97316;
+    border: none;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e65c00;
+}
+
+
+.btn-secondary {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        padding: 20px;
+    }
+
+    .contact-form-card {
+        padding: 20px;
+    }
+
+    .btn-warning,
+    .btn-secondary {
+        width: 100%;
+    }
+}
+
