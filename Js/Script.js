@@ -1,4 +1,4 @@
-// Datos de los contactos, agregando is favorite para poder poner cualquiera de estos como favoritos. 
+// Datos de los contactos, agregando is favorite para poder poner cualquiera de estos como favoritos. //
 let contacts = [
     {
         name: "Hugo Samayoa",
