@@ -1,4 +1,4 @@
-/* Fondo igual que login y principal */
+
 body {
     background-image: url("../Image/fondologin.jpg");
     background-size: cover;
@@ -12,13 +12,13 @@ body {
     color: #fff;
 }
 
-/* Título */
+
 h2 {
     font-weight: 700;
     text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
 }
 
-/* Cards de contacto */
+
 .contact-card {
     background: rgba(20, 30, 50, 0.75);
     border-radius: 15px;
@@ -28,32 +28,32 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
 }
 
-/* Efecto hover en card */
+
 .contact-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-    background: rgba(255, 165, 0, 0.85); /* naranja translúcido */
+    background: rgba(255, 165, 0, 0.85); 
 }
 
-/* Nombre del contacto */
+
 .contact-card h5 {
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-/* Correo del contacto */
+
 .contact-card p {
     margin: 0;
     font-size: 0.95rem;
     color: #d1d5db;
 }
 
-/* Botón de agregar nuevo contacto */
+
 .btn-warning {
     font-weight: 600;
     border-radius: 10px;
     padding: 10px 20px;
-    background-color: #f97316; /* naranja rojizo */
+    background-color: #f97316; 
     border: none;
     color: #fff;
     transition: background 0.3s ease;
@@ -63,7 +63,7 @@ h2 {
     background-color: #e65c00;
 }
 
-/* Responsive */
+
 @media (max-width: 576px) {
     body {
         padding: 20px;

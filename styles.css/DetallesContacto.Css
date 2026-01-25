@@ -31,7 +31,7 @@ h2 {
     }
 }
 
-/* Columna de la lista de contactos */
+
 .contact-list {
     flex: 1;
     max-width: 100%;
@@ -43,13 +43,13 @@ h2 {
     }
 }
 
-/* Columna de detalles del contacto */
+
 .contact-details {
     flex: 2;
     min-height: 400px;
 }
 
-/* Tarjeta de contacto en la lista */
+
 .contact-card {
     background: rgba(20, 30, 50, 0.75);
     border-radius: 15px;
@@ -64,11 +64,11 @@ h2 {
 .contact-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    background: rgba(46, 204, 113, 0.85); /* Verde más vivo al pasar el mouse */
+    background: rgba(46, 204, 113, 0.85);
 }
 
 .contact-card.selected {
-    background: rgba(46, 204, 113, 0.95); /* Verde más vivo al seleccionar */
+    background: rgba(46, 204, 113, 0.95);
     box-shadow: 0 10px 20px rgba(46, 204, 113, 0.4);
 }
 
@@ -84,7 +84,7 @@ h2 {
     color: #d1d5db;
 }
 
-/* Estilo para los detalles del contacto */
+
 .contact-details,
 .card {
     background: rgba(20, 30, 50, 0.85);
@@ -115,7 +115,7 @@ h2 {
     color: #fff;
 }
 
-/* Botón de regresar */
+
 .btn-secondary {
     margin-top: 20px;
     border-radius: 10px;
@@ -131,7 +131,7 @@ h2 {
     background-color: rgba(120, 120, 120, 0.9);
 }
 
-/* Botón de agregar contactos */
+
 .btn-warning {
     font-weight: 600;
     border-radius: 10px;
@@ -146,7 +146,7 @@ h2 {
     background-color: #e65c00;
 }
 
-/* Ajustes responsivos */
+
 @media (max-width: 576px) {
     body {
         padding: 20px;
@@ -156,7 +156,8 @@ h2 {
         padding: 15px;
     }
 
-    .btn-warning, .btn-secondary {
+    .btn-warning,
+    .btn-secondary {
         width: 100%;
         text-align: center;
         margin-top: 10px;
