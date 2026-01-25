@@ -1,0 +1,190 @@
+body {
+    background-image: url("../Image/fondologin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 30px;
+    color: #fff;
+}
+
+h2 {
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.task-card {
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.task-card.urgency-baja {
+    background: rgba(34, 197, 94, 0.75);
+}
+
+.task-card.urgency-media {
+    background: rgba(234, 179, 8, 0.75);
+}
+
+.task-card.urgency-alta {
+    background: rgba(239, 68, 68, 0.75);
+}
+
+.task-card h5 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.task-card p {
+    margin: 8px 0;
+    color: #f1f5f9;
+    font-size: 0.95rem;
+}
+
+.task-card strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.task-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-edit {
+    background-color: rgba(59, 130, 246, 0.9);
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: rgba(37, 99, 235, 1);
+}
+
+.btn-delete {
+    background-color: rgba(15, 23, 42, 0.7);
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: rgba(15, 23, 42, 0.9);
+}
+
+.btn-warning {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #f97316;
+    border: none;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e65c00;
+}
+
+.btn-secondary {
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: rgba(120, 120, 120, 0.7);
+    border: none;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(120, 120, 120, 0.9);
+}
+
+.task-modal {
+    background: rgba(20, 30, 50, 0.95);
+    border-radius: 15px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.task-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.task-modal .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.task-modal .form-label {
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+.task-modal .form-control,
+.task-modal .form-select {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.task-modal .form-control::placeholder {
+    color: #d1d5db;
+}
+
+.task-modal .form-control:focus,
+.task-modal .form-select:focus {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.4);
+    border-color: #f97316;
+    outline: none;
+}
+
+.task-modal .form-control option,
+.task-modal .form-select option {
+    background: #1e293b;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 20px;
+    }
+
+    .task-card {
+        padding: 20px;
+    }
+
+    .task-actions {
+        flex-direction: column;
+    }
+
+    .task-actions .btn {
+        width: 100%;
+    }
+}
