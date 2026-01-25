@@ -44,7 +44,7 @@ let contacts = [
 
 let selectedContact = null;
 
-// Cargar contactos desde localStorage (si existen)
+
 function loadContacts() {
     const savedContacts = localStorage.getItem('contacts');
     if (savedContacts) {
@@ -52,12 +52,12 @@ function loadContacts() {
     }
 }
 
-// Guardar contactos en localStorage
+
 function saveContacts() {
     localStorage.setItem('contacts', JSON.stringify(contacts));
 }
 
-// Función para mostrar la lista de contactos
+
 function showContactList() {
     const contactList = document.getElementById('contact-list');
     if (contactList) {
@@ -79,7 +79,7 @@ function showContactList() {
     }
 }
 
-// Función para mostrar los detalles de un contacto
+// Función mostrar los detalles
 function showContactDetails(contact) {
     const detailsElement = document.getElementById('contact-details');
     if (detailsElement) {
@@ -99,7 +99,7 @@ function showContactDetails(contact) {
     }
 }
 
-// Función para actualizar el botón de favoritos
+
 function updateFavoriteButton() {
     const favoriteBtn = document.getElementById('favorite-btn');
     if (selectedContact && favoriteBtn) {
@@ -111,7 +111,7 @@ function updateFavoriteButton() {
     }
 }
 
-// Función para tener favorito o no, es decir quitar o poner contacto fav.
+
 function toggleFavorite() {
     if (selectedContact) {
         selectedContact.isFavorite = !selectedContact.isFavorite;
@@ -120,7 +120,7 @@ function toggleFavorite() {
     }
 }
 
-// Función para cargar los favoritos
+
 function loadFavorites() {
     const favoritesList = document.getElementById('favorites-list');
     if (favoritesList) {
@@ -148,7 +148,7 @@ function loadFavorites() {
     }
 }
 
-// Cargar datos al iniciar
+
 document.addEventListener('DOMContentLoaded', () => {
     loadContacts();
 
